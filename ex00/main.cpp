@@ -13,7 +13,6 @@ void fillContainer(T& c, int start, int step, int count) {
 int main() {
     srand(time(NULL));
 
-    //Vector
     printTitle("VECTOR");
     std::vector<int> v;
     fillContainer(v, 0, 3, 10);
@@ -27,7 +26,6 @@ int main() {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
 
-    //List
     printTitle("LIST");
     std::list<int> l;
     fillContainer(l, 5, 5, 6);
@@ -41,7 +39,6 @@ int main() {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
 
-    //deque
     printTitle("DEQUE");
     std::vector<int> d;
     fillContainer(d, -10, 2, 12);
@@ -55,7 +52,6 @@ int main() {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
 
-    //const test
     printTitle("CONST CONTAINER");
     const std::vector<int> cv(v);
     try {
