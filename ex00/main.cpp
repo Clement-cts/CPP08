@@ -64,6 +64,6 @@ int main() {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
 
-    std::cout << "\nAll tests done." << std::endl;
+    std::cout << std::endl;
     return 0;
 }
