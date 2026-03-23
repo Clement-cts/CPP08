@@ -2,6 +2,7 @@
 
 int main() {
     try {
+        std::cout << "\n====== Test 1 ======" << std::endl;
         Span sp(5);
         sp.addNumber(6);
         sp.addNumber(3);
@@ -17,6 +18,8 @@ int main() {
         } catch (const std::exception& e) {
             std::cout << "Excepted exception: " << e.what() << std::endl;
         }
+
+        std::cout << "\n====== Test 2 ======" << std::endl;
         Span big(10000);
         std::vector<int> v;
         srand(time(NULL));
@@ -27,6 +30,7 @@ int main() {
         std::cout << "big shortestSpan: " << big.shortestSpan() << std::endl;
         std::cout << "big longestSpan: " << big.longestSpan() << std::endl;
 
+        std::cout << "\n====== Test 3 ======" << std::endl;
         Span tiny(10);
         tiny.addNumber(1);
         try {
