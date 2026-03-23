@@ -1,6 +1,6 @@
 #include "Span.hpp"
 
-/*int main() {
+int main() {
     try {
         Span sp(5);
         sp.addNumber(6);
@@ -8,13 +8,14 @@
         sp.addNumber(17);
         sp.addNumber(9);
         sp.addNumber(11);
+        //sp.addNumber(1);
 
         std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp.longestSpan() << std::endl;
         try {
             sp.addNumber(42);
         } catch (const std::exception& e) {
-            std::cout << "'Excepted exception: " << e.what() << std::endl;
+            std::cout << "Excepted exception: " << e.what() << std::endl;
         }
         Span big(10000);
         std::vector<int> v;
@@ -36,9 +37,9 @@
     } catch (const std::exception& e) {
         std::cerr << "Fatal: " << e.what() << std::endl;
     }
-}*/
+}
 
-int main() {
+/*int main() {
     Span sp = Span(5);
     sp.addNumber(6);
     sp.addNumber(3);
@@ -49,4 +50,4 @@ int main() {
     std::cout << sp.longestSpan() << std::endl;
 
     return 0;
-}
+}*/
