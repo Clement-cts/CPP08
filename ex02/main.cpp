@@ -28,8 +28,7 @@ static void testSubjectLike() {
 
     ++it;
     --it;
-    while (it != ite)
-    {
+    while (it != ite) {
         std::cout << *it << std::endl;
         ++it;
     }
@@ -60,15 +59,13 @@ static void testListSameOutput() {
 
     ++it;
     --it;
-    while (it != ite)
-    {
+    while (it != ite) {
         std::cout << *it << std::endl;
         ++it;
     }
 }
 
-static void testConstAndReverse()
-{
+static void testConstAndReverse() {
     std::cout << "\n=== Const + reverse iterators ===" << std::endl;
 
     MutantStack<int> m;
@@ -85,10 +82,23 @@ static void testConstAndReverse()
         std::cout << *it << std::endl;
 }
 
-int main()
-{
+static void testStdStackLimit() {
+    std::cout << "\n=== std::stack limit ===" << std::endl;
+
+    std::stack<int> s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    std::cout << "Top: " << s.top() << std::endl;
+
+    //std::stack<int>::iterator it = s.begin();
+}
+
+int main() {
     testSubjectLike();
     testListSameOutput();
     testConstAndReverse();
+    testStdStackLimit();
     return 0;
 }
